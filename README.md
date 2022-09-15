@@ -137,3 +137,7 @@ You will deploy the application in another pipeline in azure devops
 
 These pipelines will be independent of one another
 
+---
+# Continuous Monitoring and Dashboards
+
+You will integrate prometheus and Grafana into the cluster
