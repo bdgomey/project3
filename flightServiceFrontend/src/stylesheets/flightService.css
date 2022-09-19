@@ -1,0 +1,335 @@
+/* except for a couple styled nav components, all app CSS is in here */
+
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.container {
+    background-image: url("../images/flights-bg-3.jpg");
+    background-size: 160%;
+    height: 100vh;
+    padding-top: 16px;
+    min-width: 1240px;
+}
+
+.container > button {
+    display: block;
+    clear: both;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 48px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(61, 171, 255);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 1116px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.container > button:hover {
+    background-color:  rgb(102, 191, 255);
+}
+
+h1 {
+    padding: 24px 48px;
+    margin-bottom: 36px;
+    color: white;
+    font-size: 32px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 span {
+    float: right;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+h1 button {
+    display: block;
+    text-align: center;
+    float: right;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(94, 94, 94);
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    transition: background-color 0.2s;
+    width: 250px;
+}
+
+h1 button:hover {
+    background-color:  rgb(110, 110, 110);
+}
+
+h1 button:first-of-type {
+    margin-left: 24px;
+    background-color: rgb(27, 94, 9);
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+
+h1 button:first-of-type:hover {
+    background-color:  rgb(45, 127, 22);
+}
+
+.homeContent {
+    float: left;
+    height: 552px;
+    width: 302px;
+    margin: 0px 24px 18px 48px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 24px;
+}
+
+.homeContent h2 {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 1.5em;
+}
+
+.homeContent hr {
+    height: 2px;
+    background-color: rgba(255, 255, 255, .75);
+    margin-bottom: 30px;
+}
+
+.homeContent p {
+    border-left: 20px solid rgba(255, 255, 255, .2);
+    padding: 0px 24px 0px 24px;
+    font-size: 15px;
+    margin-bottom: 2em;
+    line-height: 1.325em;
+}
+
+.homeImage {
+    float: left;
+    height: 590px;
+    margin-right: 48px;
+    border: 5px solid rgba(0, 0, 0, 0.6);
+}
+
+.errorContent {
+    background-image: url('../images/ted-striker.jpg');
+    background-size: 120%;
+    background-position: 0px -200px;
+    margin: 0px auto;
+    width: 85%;
+    height: 600px;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    padding: 32px;
+    color: white;
+}
+
+.errorContent h2 {
+    font-size: 28px;
+    margin-bottom: 1em;
+}
+
+.errorContent p {
+    font-size: 20px;
+    width: 330px;
+    margin-bottom: 1em;
+}
+
+.flightList {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 36px;
+    width: 100%;
+}
+
+.flightListItem {
+    background-color: rgba(255, 255, 255, .9);
+    padding-left: 18px;
+    margin: 0px 12px 12px 0px;
+}
+
+.flightListItem div {
+    float: right;
+    width: 48px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.flightListItem div input:first-of-type {
+    display: block;
+    height: 36px;
+    width: 36px;
+    background-color: black;
+    background-image: url('../images/edit-icon.png');
+    background-size: 100%;
+    margin: 139px 6px 6px 6px;
+    transition: background-image .2s;
+}
+
+.flightListItem div input:first-of-type:hover {
+    background-image: url('../images/edit-icon-hover.png');
+}
+
+.flightListItem div input:last-of-type {
+    display: block;
+    height: 36px;
+    width: 36px;
+    background-color: black;
+    background-image: url('../images/delete-icon.png');
+    background-size: 100%;
+    margin: 6px;
+    transition: background-image .2s;
+}
+
+.flightListItem div input:last-of-type:hover {
+    background-image: url('../images/delete-icon-hover.png');
+}
+
+.flightListItem h2 {
+    font-size: 30px;
+    color: rgb(27, 94, 9);
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.flightListItem h2 img {
+    width: 22px;
+    margin-left: 6px;
+}
+
+.flightListItem section {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.flightListItem h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.flightListItem p {
+    font-size: 16px;
+    margin-left: 22px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.flightListItem h4 {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 16px;
+}
+
+.flightListItem h4 span:first-of-type {
+    margin: 0px 8px 0px 10px;
+}
+
+.flightListItem h4 span:last-of-type {
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.ted {
+    width: 1000px;
+    margin-left: 36px;
+    border: 4px solid white;
+}
+
+.addFlightForm {
+    margin: 36px;
+    padding: 48px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    font-size: 20px;
+    color: white;
+}
+
+.addFlightForm .labels {
+    width: 170px;
+    justify-content: left;
+    text-align: right;
+    padding-right: 16px;
+}
+
+.addFlightForm .labels label {
+    display: block;
+    height: 36px;
+}
+
+.addFlightForm .inputs {
+    justify-content: left;
+    text-align: left;
+    margin-right: 32px;
+}
+
+.addFlightForm .inputs input {
+    display: block;
+    font-size: 18px;
+    height: 28px;
+    margin-bottom: 8px;
+    padding: 0px 6px;
+    width: 120px;
+}
+
+.addFlightForm .inputs select {
+    display: block;
+    font-size: 18px;
+    height: 28px;
+    margin-bottom: 8px;
+    padding: 0px 6px;
+    width: 132px;
+}
+
+.addFlightForm .errorInput {
+    width: 150px;
+    margin-right: 36px;
+}
+
+.addFlightForm .errorInput #errorMessage {
+    width: 134px;
+    height: 240px;
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, .05);
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+.addFlightForm .errorInput input {
+    font-size: 18px;
+    padding: 10px;
+    height: 46px;
+    border-radius: 6px;
+    background-color: rgb(27, 94, 9);
+    color: white;
+    transition: background-color 0.2s;
+    width: 150px;
+}
+
+.addFlightForm .errorInput input:hover {
+    background-color:  rgb(45, 127, 22);
+}
+
+.addFlightForm img {
+    width: 500px;
+    height: 314px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+    padding: 18px;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 24px;
+}
