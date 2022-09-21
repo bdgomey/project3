@@ -8,7 +8,7 @@ export const Home = () => {
 
     return (
         <div className="container">
-            <h1>Welcome To Ted Striker's Flight Service!<span>➤ Confidence &amp; Sobriety Since 1980</span></h1>
+            <h1>Welcome To Obijas's Flight Service!<span>➤ Confidence &amp; Sobriety Since 1980</span></h1>
             <div className='homeContent'>
                 <h2>"Striker, listen, and you listen close — flying a plane is no different than riding a bicycle, just a lot harder to put baseball cards in the spokes."</h2>
                 <hr></hr>

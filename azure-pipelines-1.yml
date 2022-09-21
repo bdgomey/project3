@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '4dab3235-b674-4e61-ba0b-b68a275908fd'
-  imageRepository: 'team3appcontainerimagefront'
+  imageRepository: 'team2appcontainerimagefront'
   containerRegistry: 'team2project3repo.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/flightServiceFrontend/Dockerfile'
   #tag: '$(Build.BuildId)'
