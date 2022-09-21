@@ -14,7 +14,8 @@ variables:
   imageRepository: 'team3appcontainerimagefront'
   containerRegistry: 'team2project3repo.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/flightServiceFrontend/Dockerfile'
-  tag: '$(Build.BuildId)'
+  #tag: '$(Build.BuildId)'
+  tag: 'latest'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
