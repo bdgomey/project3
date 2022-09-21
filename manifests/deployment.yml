@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ohbsterproject 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ohbsterproject
+  template:
+    metadata:
+      labels:
+        app: ohbsterproject 
+    spec:
+      containers:
+        - name: ohbsterproject 
+          image: team2project3repo.azurecr.io/ohbsterproject
+          ports:
+          - containerPort: 8085/tcp
