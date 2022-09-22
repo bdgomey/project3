@@ -12,6 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'a06b9715-3d8c-4af7-9147-1085f5e7e443'
+  azurermServiceConnection: 'AzureRM-ServiceConnection'
   imageRepository: 'team2project3containerimage'
   containerRegistry: 'team2project3repo.azurecr.io'
   dockerfilePath: '**/Dockerfile'
@@ -34,21 +35,21 @@ stages:
     pool:
       vmImage: $(vmImageName)
     steps:
-      - task: DockerCompose@0
-        displayName: Container registry login
-        inputs:
-          containerregistrytype: Azure Container Registry
-          azureContainerRegistry: $(containerRegistry)
+    - task: DockerCompose@0
+      displayName: Container registry login
+      inputs:
+        containerregistrytype: Azure Container Registry
+        azureContainerRegistry: $(containerRegistry)
 
-      - task: DockerCompose@0
-        displayName: Build Services
-        inputs:
-          action: Build services
-          azureSubscriptionEndpoint: $(dockerRegistryServiceConnection)
-          dockerComposeFile: $(dockerComposeFile)
-          projectName: $(Build.Repository.Name)
-          qualifyImageNames: true
-          additionalImageTags: $(Build.BuildId)
+    - task: DockerCompose@0
+      displayName: Build Services
+      inputs:
+        action: Build services
+        azureSubscriptionEndpoint: $(dockerRegistryServiceConnection)
+        dockerComposeFile: $(dockerComposeFile)
+        projectName: $(Build.Repository.Name)
+        qualifyImageNames: true
+        additionalImageTags: $(Build.BuildId)
           
     # - task: Docker@2
     #   displayName: Build and push an image to container registry
