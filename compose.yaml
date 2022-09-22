@@ -1,0 +1,23 @@
+# version: '3.4'
+# services:
+#   backend:
+#     build:
+#       context: ./flightServiceBackend 
+#       target: backend
+#   frontend:
+#     build:
+#       context: ./flightServiceFrontend
+#       target: frontend
+# version: '3'
+
+services:
+  backend:
+    build: ./flightServiceBackend
+    ports: 
+    - 8085:8085
+  frontend:
+    build: ./flightServiceFrontend
+    ports:
+    - 3000:3000
+
+
