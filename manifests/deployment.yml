@@ -16,4 +16,4 @@ spec:
         - name: team2project3containerimage 
           image: team2project3repo.azurecr.io/team2project3containerimage
           ports:
-          - containerPort: 8080
+          - containerPort: 3000
