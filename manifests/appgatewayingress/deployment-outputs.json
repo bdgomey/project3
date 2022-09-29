@@ -1,0 +1,30 @@
+{
+  "aksApiServerAddress": {
+    "type": "String",
+    "value": "aks-a1c77234.hcp.eastus.azmk8s.io"
+  },
+  "aksClusterName": {
+    "type": "String",
+    "value": "aks1d9e"
+  },
+  "applicationGatewayName": {
+    "type": "String",
+    "value": "applicationgateway1d9e"
+  },
+  "identityClientId": {
+    "type": "String",
+    "value": "4db474ba-02ea-4f35-b5e6-6d67cd5c9108"
+  },
+  "identityResourceId": {
+    "type": "String",
+    "value": "/subscriptions/f6a7723b-56ed-4572-a4b2-0f147ad4fd1b/resourceGroups/project3appgw/providers/Microsoft.ManagedIdentity/userAssignedIdentities/appgwContrIdentity1d9e"
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "project3appgw"
+  },
+  "subscriptionId": {
+    "type": "String",
+    "value": "f6a7723b-56ed-4572-a4b2-0f147ad4fd1b"
+  }
+}

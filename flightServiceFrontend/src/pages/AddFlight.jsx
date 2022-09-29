@@ -24,7 +24,7 @@ export const AddFlight = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.post('http://localhost:8085/flights', 
+            await axios.post('/flights', 
                             {   flightNumber: flightNumberRef.current.value, 
                                 departureAirport: departureAirportRef.current.value, 
                                 departureDate: departureDateRef.current.value, 

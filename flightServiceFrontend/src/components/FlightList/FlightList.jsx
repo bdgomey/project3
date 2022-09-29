@@ -11,7 +11,7 @@ export const FlightList = (props) => {
 
     // GET all flights
     const flightInfo = () => {
-        axios.get('http://localhost:8085/flights')
+        axios.get('/flights')
             .then(res => setFlights(res.data));
     }
 
@@ -49,7 +49,7 @@ export const FlightList = (props) => {
     // DELETE selected flight
     const handleDelete = async (flightNumberToDelete) => {
         try {
-            await axios.delete(`http://localhost:8085/flights/${flightNumberToDelete}`);
+            await axios.delete(`/flights${flightNumberToDelete}`);
             // navigate('../flights', {replace: true});
             flightInfo();
         } catch (error) {
@@ -143,3 +143,5 @@ export const FlightList = (props) => {
         </>
     );
 }
+
+

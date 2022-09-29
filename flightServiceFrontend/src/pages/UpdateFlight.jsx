@@ -29,7 +29,7 @@ export const UpdateFlight = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.put('http://localhost:8085/flights',
+            await axios.put('/flights',
                 {
                     // adding this for backend validation, allows for overwrite of flight number
                     oldFlightNumber: flightToUpdate.flight?.flightNumber,
@@ -92,3 +92,4 @@ export const UpdateFlight = () => {
         </div>
     )
 }
+
